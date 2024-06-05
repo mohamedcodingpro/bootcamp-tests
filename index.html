@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MochaJS Testing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/9.0.2/mocha.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
+</head>
+
+<body>
+    <div id="mocha"></div>
+    <script>
+        mocha.setup('bdd');
+        var assert = chai.assert;
+    </script>
+    <script src="src/greet.js" charset="utf-8"></script>
+    <script src="test/greet.tests.js" charset="utf-8"></script>
+    <script src="src/isFromBellville.js" charset="utf-8"></script>
+    <script src="test/isFromBellville.test.js" charset="utf-8"></script>
+    <script src="src/regCheck.js" charset="utf-8"></script>
+    <script src="test/regCheck.test.js" charset="utf-8"></script>
+    <script src="src/countRegNumber.js" charset="utf-8"></script>
+    <script src="test/countRegNumber.test.js" charset="utf-8"></script>
+    <script src="src/isWeekday.js" charset="utf-8"></script>
+    <script src="test/isWeekday.test.js" charset="utf-8"></script>
+    <script src="src/yearsAgo.js" charset="utf-8"></script>
+    <script src="test/yearsAgo.test.js" charset="utf-8"></script>
+    <script src="src/countAllPaarl.js" charset="utf-8"></script>
+    <script src="test/countAllPaarl.test.js" charset="utf-8"></script>
+    <script src="src/fromWhere.js" charset="utf-8"></script>
+    <script src="test/fromWhere.test.js" charset="utf-8"></script>
+    <script src="src/findItemsOver.js" charset="utf-8"></script>
+    <script src="test/findItemsOver.test.js" charset="utf-8"></script>
+    <script src="src/totalPhoneBill.js" charset="utf-8"></script>
+    <script src="test/totalPhoneBill.test.js" charset="utf-8"></script>
+    <script>
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
+</body>
+
+</html>
